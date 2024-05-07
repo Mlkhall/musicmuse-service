@@ -39,7 +39,6 @@ class CLIPLayer(nn.Module):
 
 
 class CLIP(nn.Module):
-
     def __init__(self):
         self.embedding = CLIPEmbedding(4908, 768, 77)
         self.layers = nn.Module([
