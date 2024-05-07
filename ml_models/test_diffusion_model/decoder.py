@@ -45,7 +45,6 @@ class VAE_ResidiualBlock(nn.Module):
         return x + self.residual_layer(residue)
     
 class VAE_Decoder(nn.Module):
-
     def __init__(self):
         super().__init__(
             nn.Conv2d(4, 4, kernel_size=1, padding=0),
